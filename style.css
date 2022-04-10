@@ -1,0 +1,58 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+body {
+  background-color: #1E232C;
+  color: gray;
+  display: grid;
+  grid-template-rows: repeat(5, 100px);
+  grid-template-columns: repeat(2, 50%);
+  margin: 90pt 50pt 100pt 100pt;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2pt;
+  border-width: 1pt;
+  padding: 15px;
+  height: 400pt;
+  max-width: 400pt;
+  min-width: 380pt;
+  position: center;
+
+}
+
+div {
+  font-size: 10pt;
+  padding: 10px;
+  margin: 10px;
+}
+
+#title {
+  background-image: linear-gradient(to right, #FF00BC, #00FFF3, #FF1B9A);   -webkit-background-clip: text;
+  margin: 0 auto;
+  color: transparent;
+  background-size: 150pt;
+  font-family: 'Times New Roman', serif;
+  text-align: center;
+}
+
+
+.Header {
+  display: block;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  position: center;
+  margin: 0 auto;
+  text-align: center;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 1px;
+  background-position: bottom;
+
+}

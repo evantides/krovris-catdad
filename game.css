@@ -1,0 +1,35 @@
+/*
+    Game Styling
+*/
+
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+body {
+    display: block;
+}
+
+.mains {
+    display: block;
+    width: 900px;
+    position: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+canvas {
+    background-color: gray;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+#main-menu {
+    display: block;
+    padding: 15px;
+}
