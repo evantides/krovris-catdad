@@ -10,28 +10,16 @@
 
 class Game {
 
-    // try to create a new game with new state as a new object
-    // this object can be potentially pointless?
-    Start () {
-        try {
-            game_init.create();
-            console.log('works!')
-            this.state = true;
-        } catch (e) {
-            console.error(e);
-            return false;
-        }
-    }
-    save_file = "" //will hold bits in encoded doc as cookie on PC as a string
-    state = false;
-    name = "";
+    save_file = "" // will hold bits in encoded doc as cookie on PC as a string
+    state = false
+    playerName = ""
 
     //save the game into save_file data
 
     //checks the state, if false, can't save anything
     SaveGame (data) {
         if ((this.state === false) || (!data)) {
-            return console.error("Can't do that, homie...")
+            console.error("Can't do that, homie...")
             return false;
         } else {
             try {
@@ -65,21 +53,35 @@ class Game {
 //
 // }
 
-let introduction = () => {
-    let c = document.getElementById()
+let storyHandler = {
+    intro : function(object) {
+    }
+
+}
+
+let eventHandler = (buttons, canvas, player) => {
+        alert("We made it!")
 }
 
 let main = () => {
     $(document).ready(function() {
-        alert("new Game Begin");
         let newGame = new Game();
-        newGame.Start();
         if (newGame.state === false) {
             newGame.state = true;
         }
-        $("#save").display = 'block';
-        $("#exit_button").display = 'none'
+
+        const menuButtons = {
+            left: document.createElement('button'),
+            middle: document.createElement('button'),
+            right:  document.createElement('button')
+        }
+
+        const canvas = document.getElementById('window')
+
+        eventHandler(menuButtons, canvas, newGame);
+
     })
+
 }
 
 main();
