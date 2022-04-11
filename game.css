@@ -12,7 +12,7 @@ body {
     display: block;
 }
 
-.mains {
+div {
     display: block;
     width: 900px;
     position: center;

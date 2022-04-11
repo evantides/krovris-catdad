@@ -24,6 +24,7 @@ class Game {
     }
     save_file = "" //will hold bits in encoded doc as cookie on PC as a string
     state = false;
+    name = "";
 
     //save the game into save_file data
 
@@ -47,19 +48,25 @@ class Game {
 }
 
 // create a new game
-let game_init = {
-    canvas : document.createElement("canvas"),
-    create : function() {
-            this.canvas.width = 500;
-            this.canvas.height = 350;
-            this.context = this.canvas.getContext("2d")
-            document.body.append(this.canvas, document.body.childNodes[0])
-    }
 
-}
+// below game_init operates potentially creating a new canvas
+// this project doesn't need a new canvas to operate.
+// kept here for syntax and reference!
+
+
+// let game_init = {
+//     canvas : document.createElement("canvas"),
+//     create : function() {
+//             this.canvas.width = 500;
+//             this.canvas.height = 350;
+//             this.context = this.canvas.getContext("2d")
+//             document.body.append(this.canvas, document.body.childNodes[0])
+//     }
+//
+// }
 
 let introduction = () => {
-
+    let c = document.getElementById()
 }
 
 let main = () => {
